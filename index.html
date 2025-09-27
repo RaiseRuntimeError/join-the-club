@@ -1897,13 +1897,13 @@ font-size: 20px;
       <p>Please write your message below and contact information below. We will respond as soon as possible.</p>
       
       <label for="name">Name<span>*</span></label>
-      <input type="text" id="nameInput" name="name" placeholder="Jane/John Doe" required>                
+      <input type="text" id="nameInput" name="name" required minlength="2" maxlength="80" pattern=".*\S.*" placeholder="Jane/John Doe">                
       
       <label for="email">E-mail<span>*</span></label>
-      <input type="email" id="emailInput" name="email" placeholder="you@email.com" required>
+      <input type="email" id="emailInput" name="email" placeholder="you@email.com" required maxlength="120">
       
       <label for="textarea">Comment</label>
-      <textarea class="contact-textarea" id="textarea" name="message" required></textarea>
+      <textarea class="contact-textarea" id="textarea" name="message" required minlength="10" maxlength="3000"></textarea>
       
       <!-- optional hidden fields -->
       <input type="text" name="_gotcha" style="display:none">
@@ -1933,6 +1933,7 @@ font-size: 20px;
     AOS.init();
   </script>
 </html>
+
 
 
 
