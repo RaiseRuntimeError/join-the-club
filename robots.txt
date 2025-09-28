@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://8647.club/sitemap.xml
